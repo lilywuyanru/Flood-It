@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Flood It</title>
+  <style>
+
+    body{
+      margin: auto;
+    }
+
+    .sections{
+      width:100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+    }
+    
+    #gameCanvas{
+      border: 3px solid black;
+    }
+    
+    .buttons{
+      margin: 10px;
+      display: block;
+    }
+
+    #green{
+      background-color: green;
+      
+    }
+    #blue{
+      background-color: blue;
+    }
+    #purple{
+      background-color: purple;
+    }
+    #red{
+      background-color: red;
+    }
+    #yellow{
+      background-color: yellow;
+    }
+    h3{
+      display: block;
+    }
+
+  </style>
+</head>
+
+<body>
+<div class=sections>
+  <canvas id="gameCanvas" width="300" height="300"></canvas>
+  <p id="buttons">
+    <button class="buttons" colour='green' id="green">Green</button>
+    <button class="buttons" colour='yellow' id="yellow">Yellow</button>
+    <button class="buttons" colour='blue' id="blue">Blue</button>
+    <button class="buttons" colour='purple' id="purple">Purple</button>
+    <button class="buttons" colour='red' id="red">Red</button>
+    <button class="buttons" id="restart">Restart</button>
+    <button class="buttons" id="clear">Clear</button>
+  </p>
+  <h3 id="score">0/25</h3>
+</div>
+
+<div class=sections>
+  <h3 id="result"></h3>
+  <h3 id="history"></h3>
+</div>
+
+
+<script src="canvas.js"></script>
+<script src="flood.js"></script>
+<script src="click.js"></script>
+<script src="score.js"></script>
+<script src="cheat.js"></script>
+
+</body>
+</html>
